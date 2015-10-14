@@ -3,10 +3,11 @@
     "TAG_LINE": "Kommer med solsken till dig!",
     "WEATHER_FOR": "Prognos för",
     "FORECAST_FOR": "Prognos för kl",
-    "GET_5DAY": "5-dagarsprognos",
+    "GET_5DAY": "5-dygnsprognos",
     "GET_WEATHER_FOR_LOCATION": "Hämta prognos för en annan ort",
     "GETTING_FORCAST_FOR": "Hämtar prognosen för",
-    "GETTING_5DAY_FORECAST": "Hämtar prognosen"
+    "GETTING_5DAY_FORECAST": "Hämtar prognosen",
+    "5DAY_FORECAST_FOR": "5-dygnsprognos för"
   },
   "WEATHER": {
     "RAIN": "Regn",

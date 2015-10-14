@@ -32,14 +32,7 @@
           },
           locations: function (LocationSvc) {
             return LocationSvc.getSavedLocations();
-          },
-          translations: function($translate) {
-            return $translate([
-              'START.GETTING_FORCAST_FOR',
-              'START.GETTING_5DAY_FORECAST'
-            ]);
           }
-
         }
       });
 
@@ -49,7 +42,7 @@
         prefix: 'localization/locale-',
         suffix: '.json'
       });
-      $translateProvider.preferredLanguage('sv');
+      $translateProvider.preferredLanguage('en');
       $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
     });
 
