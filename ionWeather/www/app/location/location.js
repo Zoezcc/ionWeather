@@ -3,14 +3,6 @@
 
   angular.module('ionWeather.location', [])
 
-    .config(function (uiGmapGoogleMapApiProvider) {
-      uiGmapGoogleMapApiProvider.configure({
-        key: 'AIzaSyDM0VgN8GBU144iZyZfi3XcgjxvUWbrufo',
-        sensor: true,
-        libraries: 'geocoder'
-      });
-    })
-
     .factory('LocationSvc', function ($q, $log, $cordovaGeolocation, uiGmapGoogleMapApi, $ionicPlatform, $localStorage) {
 
       var service = {
@@ -41,8 +33,6 @@
                   var geocoder = new maps.Geocoder();
                   var latlng = { lat: pos.coords.latitude, lng: pos.coords.longitude };
                   geocoder.geocode({ 'location': latlng }, function (results, status) {
-                    //$log.log('Geocoder', status, results);
-        
                     if (results[2]) {
                       deferred.resolve({
                         name: results[2].formatted_address,
@@ -78,8 +68,6 @@
         uiGmapGoogleMapApi.then(function (maps) {
           var geocoder = new maps.Geocoder();
           geocoder.geocode({ 'address': cityName }, function (results, status) {
-            $log.log('Geocoder', status, results);
-            //deferred.resolve(results);
             var locations = [];
             angular.forEach(results, function(location) {
               locations.push({
@@ -93,18 +81,6 @@
               });
             });
             deferred.resolve(locations);
-            // if (results[2]) {
-            //   deferred.resolve({
-            //     name: results[2].formatted_address,
-            //     pos: pos
-            //   });
-            // }
-            // else {
-            //   deferred.resolve({
-            //     name: 'your position',
-            //     pos: pos
-            //   });
-            // }
           })
         });
         return deferred.promise;

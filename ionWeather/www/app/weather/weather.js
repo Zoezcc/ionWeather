@@ -3,9 +3,6 @@
 
   angular.module('ionWeather.weather', [])
 
-    .value('WeatherApiUrl', 'http://yr-weather-api.herokuapp.com/')
-    //.value('WeatherApiUrl', '/api/')
-
     .factory('WeatherSvc', function ($http, $q, $ionicPlatform, $log, $cordovaGeolocation, WeatherApiUrl) {
       
       var service = {
