@@ -4,5 +4,6 @@
 node_modules/
 platforms/
 plugins/
+build/
 
 www/app/app.config.js
