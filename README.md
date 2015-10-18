@@ -15,3 +15,5 @@ Demo app using Ionic Framework
 * To add a platform to your project, run `ionic plaform add [ios|android]`. To add iOS support to your app, you need to be on OSX.
 * To build your app, run `ionic build [ios|android]`
 * To deploy your app to your phone, connect the phone using USB and run `ionic run [ios|android]`
+
+## Available inn the Google Play Store
