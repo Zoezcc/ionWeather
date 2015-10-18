@@ -16,4 +16,5 @@ Demo app using Ionic Framework
 * To build your app, run `ionic build [ios|android]`
 * To deploy your app to your phone, connect the phone using USB and run `ionic run [ios|android]`
 
-## Available inn the Google Play Store
+## Available in the Google Play Store
+https://play.google.com/store/apps/details?id=se.presis.wthr
