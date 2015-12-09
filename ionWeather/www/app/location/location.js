@@ -74,8 +74,8 @@
                 name: location.formatted_address,
                 pos: {
                   coords: {
-                    latitude: location.geometry.location.G,
-                    longitude: location.geometry.location.K
+                    latitude: location.geometry.location.lat(),
+                    longitude: location.geometry.location.lng()
                   }
                 }
               });
